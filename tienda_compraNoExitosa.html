@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Compra Exitosa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      margin-bottom: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	body {
+		margin: 30px 0px 0px 0px;
+		background-image: url(./Images/fondo.png);
+		font-family: Arial, Helvetica, sans-serif;
+		color: #666;
+	}
+	.logo {
+		width: 370px;
+		height: 78px;
+		background-image: url(./Images/logo.png);
+		margin: auto;
+	}
+	.logo2 {
+		width: 30px;
+		height: 30px;
+		background-image: url(./Images/logo2.png);
+	}
+  </style>
+</head>
+<body style ='background-color: #e3ffdb;'>
+
+<div class="jumbotron" style ='background-color: #ffffff;'>
+  <div class="container text-center">
+	<div class="logo">&nbsp;</div>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <!--Aquí hace el menú comprimido cuando la ventana es móvil-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://kokusai.mx/"><div class="logo2">&nbsp;</div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./tienda_home.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+        <li><a href="./tienda_contacto.html"><span class="glyphicon glyphicon-earphone"></span> Contacto</a></li>
+      </ul>
+      </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+	<div class="alert alert-danger">
+			<strong><center><h3>Hubo un error al procesar el pago</h3></center></strong><br>
+	</div>
+	<div class="col-xs-4 col-xs-offset-4">
+		<a href="./tienda_checkout.html"><center><button type="button" class="btn btn-danger btn-lg">Volver a selección de pago</button></center></a>
+	</div><br><br>
+  </div>
+</div><br><br>
+
+</body>
+</html>
