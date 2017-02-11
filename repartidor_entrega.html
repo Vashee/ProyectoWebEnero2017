@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Orden de entrega</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */
+     .jumbotron {
+      margin-bottom: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+	body {
+		margin: 30px 0px 0px 0px;
+		background-image: url(./Images/fondo.png);
+		font-family: Arial, Helvetica, sans-serif;
+		color: #666;
+	}
+	.logo {
+		width: 370px;
+		height: 78px;
+		background-image: url(./Images/logo.png);
+		margin: auto;
+	}
+	.logo2 {
+		width: 30px;
+		height: 30px;
+		background-image: url(./Images/logo2.png);
+	}
+	.panel-heading {
+		font-size: 30px;
+
+	}
+
+  </style>
+</head>
+<body style ='background-color: #e3ffdb;'>
+  <div class="jumbotron" style ='background-color: #ffffff;'>
+    <div class="container text-center">
+      <div class="logo">&nbsp;</div>
+      <p class="text-success">Orden de entrega</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="col-xs-6 col-xs-offset-3">
+        <center><h4>No. orden: </h4></center>
+		<center>1234567890</center>
+	  </div>
+	  <br><br><br><br>
+      <div class="col-xs-6 col-xs-offset-3">
+        <center><h4>Fecha de entrega: </h4></center>
+		<center>11/Feb/2017</center>
+	  </div>
+	  <br><br><br><br>
+      <div class="col-xs-6 col-xs-offset-3">
+        <center><h4>Producto: </h4></center>
+		<center>Flor Essence</center>
+	  </div>
+	  <br><br><br><br>
+	  <div class="col-xs-6 col-xs-offset-3">
+        <center><h4>Total: </h4></center>
+		<center>$500 (2 productos)</center>
+	  </div>
+	  <br><br><br><br>
+	  <div class="col-xs-6 col-xs-offset-3">
+        <center><h4>Repartidor: </h4></center>
+		<center>
+			<select class="form-control" id="repartidor">
+				<option>Estela Téllez</option>
+				<option>Jorge Sanchez</option>
+				<option>Guadalupe Jiménez</option>
+				<option>Joaquín González</option>
+			</select>
+		</center>
+	  </div>
+	  <br><br><br><br>
+	  <div class="col-xs-6 col-xs-offset-3">
+        <center><h4>Cliente: </h4></center>
+		<center>
+			<select class="form-control" id="cliente">
+				<option>Juanito Escarcha</option>
+				<option>Lore Mipsum</option>
+			</select>
+		</center>
+	  </div>
+	  <br><br><br><br><br>
+      <div class="col-xs-6 col-xs-offset-3">
+	    <a href="./repartidor_exito.html"><center><button type="submit" class = "btn btn-success btn-lg btn-block">Confirmar</button></center></a>
+	  </div><br>
+    </div>
+  </div>
+  <br><br><br>
+</body>
+</html>

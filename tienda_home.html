@@ -78,6 +78,18 @@
 
 <div class="container">
   <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-success">
+          <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> TOTAL A PAGAR:</div>
+          <div class="panel-footer"><span id="simpleCart_total" class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> productos)</div>
+  		<div class="panel-footer">
+  			<div class="simpleCart_items" ></div>
+  		</div>
+          <form action="file:./tienda_checkout.html">
+            <center><button type="submit" class="btn btn-success">Checkout</button></center>
+          </form>
+        </div>
+    </div>
     <div class="col-sm-4">
       <div class="panel panel-success">
         <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> Flor Essence</div>
@@ -89,23 +101,12 @@
     <div class="col-sm-4">
       <div class="panel panel-success">
         <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> Kindervital</div>
-        <div class="panel-body"><img src=".\Images\producto2.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body"><img src=".\Images\producto2.png" class="img-responsive" style="width:75%" alt="Image"></div>
         <div class="panel-footer">Precio: 350 MXN</div>
 		<div class="panel-footer"><a href="javascript:;" onclick="simpleCart.add({name:'Producto 2', price: 350,thumb:'.\Images\producto2.png'});" ><span class="glyphicon glyphicon-plus"></span> Agregar al carrito</a></div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="panel panel-success">
-        <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> TOTAL A PAGAR:</div>
-        <div class="panel-footer"><span id="simpleCart_total" class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> productos)</div>
-		<div class="panel-footer">
-			<div class="simpleCart_items" ></div>
-		</div>
-        <form action="file:./tienda_checkout.html">
-          <center><button type="submit" class="btn btn-success">Checkout</button></center>
-        </form>
-      </div>
-    </div>
+
   </div>
 </div><br>
 
