@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Perfil</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="../styles/Kokusai_estilo.css"/>
+</head>
+
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+	<div class="logo">&nbsp;</div>
+    <p class="text-success">Perfil</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <!--Aqu� hace el men� comprimido cuando la ventana es m�vil-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://kokusai.mx/"><div class="logo2">&nbsp;</div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+        <li><a href="../views/tienda_contacto.html"><span class="glyphicon glyphicon-earphone"></span> Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../views/tienda_iniSesion.html"><span class="glyphicon glyphicon-off"></span> Cerrar sesi&oacute;n</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-xs-offset-4 col-sm-4">
+        <div class="panel-heading">Juan V.</div>
+        <div class="panel-body"><img src="../images/usuario.png" class="img-responsive" style="width:100%" alt="Image"></div>
+      </div>
+    </div>
+    <div class="col-xs-4 col-xs-offset-4">
+      <a class ="btn btn-info btn-lg btn-block" href="../views/tienda_historial.html">Historial</a>
+    </div><br>
+	<br><br>
+	<div class="col-xs-4 col-xs-offset-4">
+    <a class ="btn btn-info btn-lg btn-block" href="../views/tienda_checkout.html">Checkout</a>
+  </div><br>
+	<br><br>
+    <div class="col-xs-4 col-xs-offset-4">
+      <a class ="btn btn-info btn-lg btn-block" href="../views/tienda_editarPerfil.html">Editar Perfil</a>
+    </div><br>
+	<br><br>
+	<div class="col-xs-4 col-xs-offset-4">
+    <a class ="btn btn-success btn-lg btn-block" href="../views/tienda_canasta.html">Canasta de favoritos</a>
+  </div><br>
+  </div>
+</div><br><br>
+
+</body>
+</html>

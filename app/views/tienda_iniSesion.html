@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Inicio Sesión</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="../styles/Kokusai_estilo.css"/>
+</head>
+
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+	<div class="logo">&nbsp;</div>
+    <p class="text-success">Inicio de sesión</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <!--Aquí hace el menú comprimido cuando la ventana es móvil-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://kokusai.mx/"><div class="logo2">&nbsp;</div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+        <!--<li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>-->
+        <li><a href="../views/tienda_contacto.html"><span class="glyphicon glyphicon-earphone"></span> Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		<li><a href="../views/tienda_registro.html"><span class="glyphicon glyphicon-book"></span> Registrate</a></li>
+        <li><a href="../views/tienda_iniSesion.html"><span class="glyphicon glyphicon-user"></span> Inicia sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="jumbotron">
+	<div class="form-group">
+		<div class="col-xs-4 col-xs-offset-4">
+			<label for="user">Usuario:</label>
+			<input type="text" class="form-control" id="user">
+		</div><br><br><br>
+	</div>
+	<div class="form-group">
+		<div class="col-xs-4 col-xs-offset-4">
+			<label for="pwd">Contraseña:</label>
+			<input type="password" class="form-control" id="pwd">
+		</div>
+	</div><br><br><br><br>
+	<div class="col-xs-4 col-xs-offset-4">
+    <a class ="btn btn-success btn-lg btn-block" href="../views/tienda_perfil.html">Iniciar Sesión</a>
+  </div><br><br><br>
+	<div class="col-xs-4 col-xs-offset-4">
+		<center>¿No tienes tu cuenta aún?</center>
+    <a class ="btn btn-success btn-lg btn-block" href="../views/tienda_registro.html">¡Registrate ahora!</a>
+  </div><br><br><br>
+  </div>
+</div><br><br>
+
+</body>
+</html>

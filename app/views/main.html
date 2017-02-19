@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Tienda Kokusai Naturista</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles/Kokusai_estilo.css"/>
+  <script src="../scripts/simplecart-js-master/simpleCart.js"></script>
+</head>
+
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <div class="logo">&nbsp;</div>
+    <p class="text-success">Tienda en línea</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://kokusai.mx/"><div class="logo2">&nbsp;</div></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+        <li><a href="../views/tienda_contacto.html"><span class="glyphicon glyphicon-earphone"></span> Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../views/tienda_registro.html"><span class="glyphicon glyphicon-book"></span> Registrate</a></li>
+        <li><a href="../views/tienda_iniSesion.html"><span class="glyphicon glyphicon-user"></span> Inicia sesión</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> TOTAL A PAGAR:</div>
+        <div class="panel-footer"><span id="simpleCart_total" class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> productos)</div>
+        <div class="panel-footer">
+          <div class="simpleCart_items" ></div>
+        </div>
+          <form action="../views/tienda_checkout.html">
+          <center><button type="submit" class="btn btn-success">Checkout</button></center>
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> Flor Essence</div>
+        <div class="panel-body"><img src="../images/Producto1.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Precio: 250 MXN</div>
+        <div class="panel-footer"><a href="javascript:;" onclick="simpleCart.add({name:'Producto 1', price: 250,thumb:'../images/Producto1.png'});" ><span class="glyphicon glyphicon-plus"></span> Agregar al carrito</a></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> Kindervital</div>
+        <div class="panel-body"><img src="../images/producto2.png" class="img-responsive" style="width:75%" alt="Image"></div>
+        <div class="panel-footer">Precio: 350 MXN</div>
+        <div class="panel-footer"><a href="javascript:;" onclick="simpleCart.add({name:'Producto 2', price: 350,thumb:'../images/producto2.png'});" ><span class="glyphicon glyphicon-plus"></span> Agregar al carrito</a></div>
+      </div>
+    </div>
+
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> Floradix</div>
+        <div class="panel-body"><img src="../images/Producto3.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Precio: 300 MXN</div>
+        <div class="panel-footer"><a href="javascript:;" onclick="simpleCart.add({name:'Producto 3', price: 300,thumb:'../images/Producto3.png'});" ><span class="glyphicon glyphicon-plus"></span> Agregar al carrito</a></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading"><span class="glyphicon glyphicon-tree-deciduous"></span> Udo's Oil</div>
+        <div class="panel-body"><img src="../images/producto4.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Precio: 550 MXN</div>
+        <div class="panel-footer"><a href="javascript:;" onclick="simpleCart.add({name:'Producto 4', price: 550,thumb:'../images/producto4.png'});" ><span class="glyphicon glyphicon-plus"></span> Agregar al carrito</a></div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+</body>
+</html>
