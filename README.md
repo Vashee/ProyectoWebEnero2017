@@ -5,7 +5,7 @@ Proyecto para la materia de Desarrollo Web (Enero 2017 Gpo 1) con el profesor Ju
 
 Corrección del primer parcial: Bower y Grunt incluidos.
 
-Instrucciones:
+## Instrucciones
 
 1.- Al tener tres aplicaciones diferentes en un mismo proyecto es necesario cambiar el contenido del archivo main.html
 
