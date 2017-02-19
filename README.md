@@ -7,14 +7,16 @@ Corrección del primer parcial: Bower y Grunt incluidos.
 
 Instrucciones:
 
--Al tener tres aplicaciones diferentes en un mismo proyecto es necesario cambiar el contenido del archivo main.html
+1.- Al tener tres aplicaciones diferentes en un mismo proyecto es necesario cambiar el contenido del archivo main.html
 
--Los archivos correspondientes a las vistas main son:
+2.- Los archivos correspondientes a las vistas main son:
 a) cliente_iniSesion.html
+
 b) repartidor_iniSesion.html
+
 c) tienda_home.html
 	
--Lo único que se debe hacer es copiar el contenido del archivo html y sobrescribirlo en el de main.html
+3.- Lo único que se debe hacer es copiar el contenido del archivo html y sobrescribirlo en el de main.html
 
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
