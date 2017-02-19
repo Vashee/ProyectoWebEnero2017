@@ -10,11 +10,12 @@ Instrucciones:
 -Al tener tres aplicaciones diferentes en un mismo proyecto es necesario cambiar el contenido del archivo main.html
 
 -Los archivos correspondientes a las vistas main son:
-*cliente_iniSesion.html
-*repartidor_iniSesion.html
-*tienda_home.html
+a) cliente_iniSesion.html
+b) repartidor_iniSesion.html
+c) tienda_home.html
 	
 -Lo único que se debe hacer es copiar el contenido del archivo html y sobrescribirlo en el de main.html
+
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
