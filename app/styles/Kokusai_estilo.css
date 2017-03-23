@@ -18,8 +18,9 @@
     font-size: 200%;
 	}
 	.logo {
-		width: 370px;
-		height: 78px;
+    max-width: 370px;
+    height: 78px;
+    display: block;
 		background-image: url("../images/logo.png");
 		margin: auto;
 	}

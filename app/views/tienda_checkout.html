@@ -4,6 +4,8 @@
   <title>Checkout</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
   <link rel="stylesheet" href="../styles/Kokusai_estilo.css"/>
 </head>
@@ -39,35 +41,35 @@
 <div class="container">
   <div class="jumbotron">
     <div class="form-group">
-      <div class="col-xs-4 col-xs-offset-4">
+      <div>
         <label for="direccion">Direcci&oacute;n:</label>
         <input type="text" class="form-control" id="direccion">
-      </div><br><br><br>
+      </div>
     </div>
     <div class="form-group">
-      <div class="col-xs-4 col-xs-offset-4">
+      <div>
         <label for="colonia">Colonia:</label>
         <input type="text" class="form-control" id="colonia">
-      </div><br><br><br>
+      </div>
     </div>
     <div class="form-group">
-      <div class="col-xs-4 col-xs-offset-4">
+      <div>
         <label for="delegacion">Delegaci&oacute;n:</label>
         <input type="text" class="form-control" id="delegacion">
-      </div><br><br><br>
+      </div>
     </div>
     <div class="form-group">
-      <div class="col-xs-4 col-xs-offset-4">
+      <div>
         <label for="cp">C&oacute;digo Postal (CP):</label>
         <input type="text" class="form-control" id="cp">
-      </div><br><br><br>
+      </div>
     </div>
-    <div class="col-xs-4 col-xs-offset-4">
-      <a class ="btn btn-success" href="../views/tienda_pagoEfectivo.html">Pago en efectivo</a>
-      <a class ="btn btn-success" href="../views/tienda_pagoTarjeta.html">Pago en tarjeta</a>
-    </div><br>
+    <div>
+      <a class ="btn btn-success btn-lg btn-block" href="../views/tienda_pagoEfectivo.html">Pago en efectivo</a>
+      <br>
+      <a class ="btn btn-success btn-lg btn-block" href="../views/tienda_pagoTarjeta.html">Pago en tarjeta</a>
+    </div>
   </div>
-</div><br><br>
-
+</div>
 </body>
 </html>
