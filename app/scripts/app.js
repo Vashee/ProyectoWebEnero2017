@@ -2,14 +2,15 @@
 
 /**
  * @ngdoc overview
- * @name proyectoAngularApp
+ * @name parcial2App
  * @description
- * # proyectoAngularApp
+ * # parcial2App
  *
  * Main module of the application.
  */
+
 angular
-  .module('proyectoAngularApp', [
+  .module('parcial2App', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -24,10 +25,15 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/repartidor_buscador', {
+        templateUrl: 'views/repartidor_buscador.html',
+        controller: 'buscadorCtrl',
+        controllerAs: 'buscador'
+      })
+      .when('/repartidor_entrega', {
+        templateUrl: 'views/repartidor_entrega.html',
+        controller: 'GeoCtrl',
+        controllerAs: 'appGeo'
       })
       .otherwise({
         redirectTo: '/'

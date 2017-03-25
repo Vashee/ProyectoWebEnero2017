@@ -18,7 +18,7 @@
     font-size: 200%;
 	}
 	.logo {
-    max-width: 370px;
+    max-width: 369px;
     height: 78px;
     display: block;
 		background-image: url("../images/logo.png");
@@ -32,3 +32,12 @@
 	.jumbotron {
 		background-color: #ffffff;
 	}
+
+  .results tr[visible='false'],
+  .no-result{
+    display:none;
+  }
+
+  .results tr[visible='true']{
+    display:table-row;
+  }

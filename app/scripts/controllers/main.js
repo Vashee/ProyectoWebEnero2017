@@ -2,16 +2,17 @@
 
 /**
  * @ngdoc function
- * @name proyectoAngularApp.controller:MainCtrl
+ * @name parcial2App.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the proyectoAngularApp
+ * Controller of the parcial2App
  */
-angular.module('proyectoAngularApp')
-  .controller('MainCtrl', function () {
+angular.module('parcial2App')
+  .controller('MainCtrl', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
   });

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<div ng-controller="buscadorCtrl"/>
+<html lang="es">
+<head>
+  <title>Tabla de entregas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="../styles/Kokusai_estilo.css"/>
+</head>
+
+<body>
+<div class="jumbotron">
+    <div class="container text-center">
+      <div class="logo">&nbsp;</div>
+      <p class="text-success">Tabla de entregas</p>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron">
+    	<div class="input-group">
+   			<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+    		<input type="text" class="search form-control" placeholder="Buscar producto" ng-model="search">
+    	</div><br>
+    	<div class="table-responsive">
+		  <table class="table table-hover table-bordered results">
+		    <thead>
+		    <tr>
+		      <th>Direcci&oacute;n</th>
+		      <th>Total</th>
+		      <th>Selesct</th>
+		    </tr>
+        <tr class="warning no-result">
+          <td colspan="4"><i class="fa fa-warning"></i> No results</td>
+        </tr>
+		    </thead>
+		    <tbody>
+		    <tr ng-repeat="prod in modelo.entregas | filter:search">
+		      <td>{{prod.direccion}}</td>
+		      <td>{{prod.total}}</td>
+          <td><a class="btn btn-success" href="http://localhost:9000/#!/repartidor_entrega">Select</a></td>
+		    </tr>
+		    </tbody>
+		  </table>
+		</div>
+    </div>
+  </div>
+</body>
+<!--<script type="text/javascript">
+    $(document).ready(function() {
+  $(".search").keyup(function () {
+    var searchTerm = $(".search").val();
+    var listItem = $('.results tbody').children('tr');
+    var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+    
+  $.extend($.expr[':'], {'containsi': function(elem, i, match, array){
+        return (elem.textContent || elem.innerText || '').toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+    }
+  });
+    
+  $(".results tbody tr").not(":containsi('" + searchSplit + "')").each(function(e){
+    $(this).attr('visible','false');
+  });
+
+  $(".results tbody tr:containsi('" + searchSplit + "')").each(function(e){
+    $(this).attr('visible','true');
+  });
+
+  var jobCount = $('.results tbody tr[visible="true"]').length;
+
+  if(jobCount == '0') {$('.no-result').show();}
+    else {$('.no-result').hide();}
+      });
+  });
+</script>-->
+</html>

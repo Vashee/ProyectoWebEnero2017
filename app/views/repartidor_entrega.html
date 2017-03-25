@@ -1,11 +1,10 @@
 <!DOCTYPE html>
+<div ng-controller="GeoCtrl"/>
 <html lang="es">
 <head>
   <title>Orden de entrega</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
   <link rel="stylesheet" href="../styles/Kokusai_estilo.css"/>
 </head>
@@ -43,6 +42,13 @@
     <div class>
       <h4>Total: </h4>
       $500 (2 productos)
+    </div>
+    <br>
+    <div class>
+      <h4>Latitude: {{location.coords.latitude}}</h4>
+    </div>
+    <div class>
+    <h4>Longitude: {{location.coords.longitude}}</h4>
     </div>
     <br>
     <div class>
