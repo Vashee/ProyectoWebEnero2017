@@ -1,26 +1,19 @@
-# ProyectoWebEnero2017 (Entrega 1)
+# ProyectoWebEnero2017 (Entrega 2)
 ### Hecho por Yukio Tsuru y José Manuel Ballesteros.
 
 Proyecto para la materia de Desarrollo Web (Enero 2017 Gpo 1) con el profesor Juan Velez Ballesteros en ITESM Campus CCM.
+Entrega del segundo parcial:
 
-Corrección del primer parcial: Bower y Grunt incluidos.
+	*Se redujo el alcance del proyecto
+	*Mobile first y Responsive
+	*Bower & Grunt incluido
+	*Angular.js
+	*Uso de JSons, filtro y pasado de datos
+	*IoT, se obtiene la geolocalización del dispositivo
+	*Carpeta para services
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
-
-## Instrucciones
-
-1.- Al tener tres aplicaciones diferentes en un mismo proyecto es necesario cambiar el contenido del archivo main.html
-
-2.- Los archivos correspondientes a las vistas main son:
-
-	a) cliente_iniSesion.html
-
-	b) repartidor_iniSesion.html
-
-	c) tienda_home.html
-	
-3.- Lo único que se debe hacer es copiar el contenido del archivo html y sobrescribirlo en el de main.html
 
 ## Build & development
 
