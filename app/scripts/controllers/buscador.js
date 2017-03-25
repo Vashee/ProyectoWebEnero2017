@@ -9,10 +9,9 @@
  */
 
 angular.module('parcial2App')
-  .controller('buscadorCtrl', function ($scope,$log,$http) {
+  .controller('buscadorCtrl', function ($scope,$log,$http, $location, PasaDatos) {
     
     var  modelo={
-    	//profesor : "Juan Velez",
     };
 
   	$http({
@@ -26,5 +25,12 @@ angular.module('parcial2App')
     });
 
   	$scope.modelo = modelo;
+
+    $scope.enviarControlador = function(prod){
+      PasaDatos.setID(prod.id);
+      PasaDatos.setProductos(prod.productos);
+      PasaDatos.setTotal(prod.total);
+       $location.path('/repartidor_entrega');
+   }
 
   });

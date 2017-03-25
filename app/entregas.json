@@ -1,6 +1,8 @@
 {"entregas":[
-	{"id":1,"direccion": "Lluvia 743, col. Jardines del Pedregal","total":250},
-	{"id":2,"direccion": "Santa Clara 19, col. Acapatzingo ","total":1250},
-	{"id":3,"direccion": "Cairale 113, col. San Bonucci","total":500},
-	{"id":4,"direccion": "Nova Eng 1A, col. Lomas de Hidalgo","total":750}
-  ]}
+	{"id":1,"nombre":"Juanito Escarcha","direccion": "Lluvia 743, col. Jardines del Pedregal","productos":"Flor Essence","total":250},
+	{"id":2,"nombre":"Kitzi Dani","direccion": "Santa Clara 19, col. Acapatzingo ","productos":"Flor Essence, Kindervital","total":1250},
+	{"id":3,"nombre":"Jose Nieves","direccion": "Cairales 113, col. San Bonucci","productos":"Floradix","total":500},
+	{"id":4,"nombre":"Denise Alvidrez","direccion": "Corazón de melón 69, col. San Andreas","productos":"Flor Essence, Floradix","total":840},
+    {"id":5,"nombre":"John  Johnson","direccion": "Puente 41, col. Huipulco","productos":"Udo's","total":1400},
+	{"id":6,"nombre":"Sam Salerno","direccion": "Nova Eng 1A, col. Lomas de Hidalgo","productos":"Floradix, Kindervital","total":750}
+]}

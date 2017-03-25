@@ -2,7 +2,7 @@
 
 angular
   .module('parcial2App')
-  .controller('GeoCtrl', function($scope, $geolocation){
+  .controller('GeoCtrl', function($scope, $geolocation, PasaDatos){
 
     $scope.$geolocation = $geolocation
 
@@ -19,4 +19,9 @@ angular
     });
     $scope.coords = $geolocation.position.coords; // this is regularly updated
     $scope.error = $geolocation.position.error; // this becomes truthy, and has 'code' and 'message' if an error occurs
+  
+    $scope.id = PasaDatos.getID();
+    $scope.productos = PasaDatos.getProductos();
+    $scope.total = PasaDatos.getTotal();
+
   });

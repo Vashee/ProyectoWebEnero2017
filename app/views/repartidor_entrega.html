@@ -26,29 +26,29 @@
     <div class="jumbotron">
       <div class>
         <h4>No. orden: </h4>
-        1234567890
+        {{id}}
     </div>
     <br>
       <div class>
         <h4>Fecha de entrega: </h4>
-        11/Feb/2017
+        25/Mar/2017
     </div>
     <br>
       <div class>
         <h4>Producto: </h4>
-        Flor Essence
+        {{productos}}
     </div>
     <br>
     <div class>
       <h4>Total: </h4>
-      $500 (2 productos)
+      {{total}}
     </div>
     <br>
     <div class>
-      <h4>Latitude: {{location.coords.latitude}}</h4>
+      <h4>Latitude: {{$geolocation.position.coords.latitude}}</h4>
     </div>
     <div class>
-    <h4>Longitude: {{location.coords.longitude}}</h4>
+    <h4>Longitude: {{$geolocation.position.coords.longitude}}</h4>
     </div>
     <br>
     <div class>
