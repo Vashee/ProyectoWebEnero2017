@@ -17,8 +17,6 @@ angular
       maximumAge: 2,
       enableHighAccuracy: true
     });
-    $scope.coords = $geolocation.position.coords; // this is regularly updated
-    $scope.error = $geolocation.position.error; // this becomes truthy, and has 'code' and 'message' if an error occurs
   
     $scope.id = PasaDatos.getID();
     $scope.productos = PasaDatos.getProductos();
