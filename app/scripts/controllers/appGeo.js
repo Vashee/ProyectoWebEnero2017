@@ -17,7 +17,8 @@ angular
       maximumAge: 2,
       enableHighAccuracy: true
     });
-  
+    
+    $scope.today = new Date();
     $scope.id = PasaDatos.getID();
     $scope.productos = PasaDatos.getProductos();
     $scope.total = PasaDatos.getTotal();
