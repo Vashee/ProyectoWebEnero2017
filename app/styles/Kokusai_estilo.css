@@ -1,8 +1,8 @@
     /* Remove the navbar's default rounded borders and increase the bottom margin */
     html {
-		font-size:24px; /* Tamaño base de la letra en la app*/
+		font-size:24px; /* Tamaño para toda la app*/
 	}
-	@media(min-width:60em){html{font-size: 85%}} /* Tamaño para desktop*/
+	@media(min-width:60em){html{font-size: 85%}} /* Tamaño para desktop y iPad*/
 	.navbar {
       margin-bottom: 50px;
       border-radius: 0;
@@ -35,4 +35,9 @@
 	}
 	.jumbotron {
 		background-color: #ffffff;
+	}
+	.container2 { /*Container de la vista de entrega*/
+		max-width: 60em;
+		@include make-container();
+		padding-right: 2.5px;
 	}
