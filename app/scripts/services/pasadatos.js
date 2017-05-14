@@ -3,7 +3,7 @@
 angular.module('parcial2App')
   .factory('PasaDatos', function () {
     // Service logic
-    var id,total, productos;
+    var id,total, productos, entregas;
     return {
       setID: function (id) {
         this.id=id;
@@ -22,6 +22,12 @@ angular.module('parcial2App')
       },
       getProductos:function () {
         return this.productos;
+      },
+      setEntregas: function (entregas) {
+        this.entregas=entregas;
+      },
+      setEntregas:function () {
+        return this.entregas;
       },
     };
   });

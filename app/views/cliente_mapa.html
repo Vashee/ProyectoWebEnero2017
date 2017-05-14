@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<div ng-controller="CMapaCtrl"/>
 <html lang="es">
 <head>
-  <title>Mapa</title>
+  <title>Puntos de Entrega</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
@@ -12,7 +13,7 @@
   <div class="jumbotron">
     <div class="container text-center">
       <div class="logo">&nbsp;</div>
-      <p class="text-success">Mapa</p>
+      <p class="text-success">Puntos de Entrega</p>
     </div>
   </div>
   <nav class="navbar navbar-inverse">
@@ -24,13 +25,58 @@
   <div class="container">
     <div class="jumbotron">
     <div class="row">
-      <div class="panel-body">
-        <img src="../images/mapa.png" class="img-responsive" alt="Image"></div>
+       <div id="map"></div>
+    <div class="panel-body">
     </div><br>
       <div class>
-        <a class ="btn btn-warning btn-lg btn-block" href="../views/cliente_perfil.html">Volver</a>
+        <a class ="btn btn-warning btn-lg btn-block" href="http://localhost:9000/#!/cliente_perfil">Volver</a>
       </div>
     </div>
   </div>
 </body>
+<script>
+  function init() {
+    var oficina = {lat:19.2844, lng: -99.13804};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: oficina
+        });
+        var markerOficina = new google.maps.Marker({
+          position: oficina,
+          map: map
+        });
+        var marker1 = new google.maps.Marker({
+          position: {lat: 19.302, lng: -99.152},
+          map: map
+        });
+        var marker2 = new google.maps.Marker({
+          position: {lat: 19.3832, lng: -99.180},
+          map: map
+    });
+        var marker3 = new google.maps.Marker({
+          position: {lat: 19.331, lng: -99.1943},
+          map: map
+    });
+        var marker4 = new google.maps.Marker({
+          position: {lat: 19.427, lng: -99.1676},
+          map: map
+    });
+        var marker5 = new google.maps.Marker({
+          position: {lat: 19.484, lng: -99.117},
+          map: map
+    });
+        var marker6 = new google.maps.Marker({
+          position: {lat: 19.4204, lng: -99.1819},
+          map: map
+    });
+        var marker7 = new google.maps.Marker({
+          position: {lat: 19.4344, lng: -99.1331},
+          map: map
+    });
+
+      }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrqdOj3j8AM0t6f5iI3w9cvrPWf_TdwJc&callback=init">
+</script>
 </html>

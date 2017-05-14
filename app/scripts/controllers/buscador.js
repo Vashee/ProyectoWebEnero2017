@@ -16,7 +16,7 @@ angular.module('parcial2App')
 
   	$http({
         method: 'GET',
-        url: '/entregas.json'
+        url: 'http://localhost:8082/entregas'
         }).then(function successCallback(response) {
             $log.debug("successCallback"+response.data.entregas);
             $scope.modelo.entregas = response.data.entregas
