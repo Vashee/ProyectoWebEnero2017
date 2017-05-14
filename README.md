@@ -22,3 +22,7 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+
+## Video de demostración de la app
+
+https://www.youtube.com/watch?v=njq-L0PYkzo&feature=youtu.be
