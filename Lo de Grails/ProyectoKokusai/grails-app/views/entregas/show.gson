@@ -1,0 +1,7 @@
+import mx.itesm.ccm.Entregas
+
+model {
+	Entregas entregas
+}
+
+json tmpl.entregas(entregas)
