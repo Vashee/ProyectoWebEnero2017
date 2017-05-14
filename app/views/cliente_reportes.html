@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
   <link rel="stylesheet" href="../styles/Kokusai_estilo.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js"></script>
 </head>
 
 <body>
@@ -25,39 +26,249 @@
   <div class="container">
     <div class="jumbotron">
       <div class="row">
-	    <div class="col-sm-6"><br>
-	      <div class="panel panel-success">
-	        <div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> Flor Essence</div>
-	        <div class="panel-body"><img src="../images/dashboard1.png" class="img-responsive" alt="Image"></div>
-	        <div class="panel-body"><img src="../images/dashboard2.png" class="img-responsive" alt="Image"></div>
-	      </div>
-	    </div><br>
-	    <div class="col-sm-6">
-	      <div class="panel panel-success">
-	        <div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> Kindervital</div>
-          <div class="panel-body"><img src="../images/dashboard1.png" class="img-responsive" alt="Image"></div>
-          <div class="panel-body"><img src="../images/dashboard2.png" class="img-responsive" alt="Image"></div>
+      <div class="col-sm-6"><br>
+        <div class="panel panel-success">
+          <div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> Flor Essence</div>
+            <canvas id="fSChart" width="40" height="30"></canvas>
+            <script>
+                var ctx = document.getElementById("fSChart");
+                var myLineChart = new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
+                    datasets: [
+                      {
+                        label: "Ventas 2017",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(63, 191, 63,0.4)",
+                        borderColor: "rgba(63, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(63, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(63, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [205, 188, 223, 216, 167],
+                      },
+                      {
+                        label: "Ventas 2016",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(255, 191, 63,0.4)",
+                        borderColor: "rgba(255, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(255, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(255, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [198, 190, 215, 209, 159],
+                      }
+                    ]
+                  }
+              });
+  </script>
         </div>
-	    </div><br>
-	    <div class="col-sm-6">
-	      <div class="panel panel-success">
-	        <div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> Floradix</div>
-          <div class="panel-body"><img src="../images/dashboard1.png" class="img-responsive" alt="Image"></div>
-          <div class="panel-body"><img src="../images/dashboard2.png" class="img-responsive" alt="Image"></div>
+      </div><br>
+      <div class="col-sm-6">
+        <div class="panel panel-success">
+          <div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> Kindervital</div>
+          <canvas id="kVChart" width="40" height="30"></canvas>
+            <script>
+                var ctx = document.getElementById("kVChart");
+                var myLineChart = new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
+                    datasets: [
+                      {
+                        label: "Ventas 2017",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(63, 191, 63,0.4)",
+                        borderColor: "rgba(63, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(63, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(63, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [115, 121, 104, 116, 87],
+                      },
+                      {
+                        label: "Ventas 2016",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(255, 191, 63,0.4)",
+                        borderColor: "rgba(255, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(255, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(255, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [118, 123, 95, 119, 81],
+                      }
+                    ]
+                  }
+              });
+        </script>
         </div>
-	    </div><br>
-	    <div class="col-sm-6">
-	      <div class="panel panel-success">
+      </div><br>
+      <div class="col-sm-6">
+        <div class="panel panel-success">
+          <div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> Floradix</div>
+          <canvas id="fXChart" width="40" height="30"></canvas>
+            <script>
+                var ctx = document.getElementById("fXChart");
+                var myLineChart = new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
+                    datasets: [
+                      {
+                        label: "Ventas 2017",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(63, 191, 63,0.4)",
+                        borderColor: "rgba(63, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(63, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(63, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [75, 78, 84, 96, 57],
+                      },
+                      {
+                        label: "Ventas 2016",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(255, 191, 63,0.4)",
+                        borderColor: "rgba(255, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(255, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(255, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [80, 82, 85, 92, 61],
+                      }
+                    ]
+                  }
+              });
+        </script>
+        </div>
+      </div><br>
+      <div class="col-sm-6">
+        <div class="panel panel-success">
           <div class="panel-heading"><span class="glyphicon glyphicon-stats"></span> Udo's Oil</div>
-          <div class="panel-body"><img src="../images/dashboard1.png" class="img-responsive" alt="Image"></div>
-          <div class="panel-body"><img src="../images/dashboard2.png" class="img-responsive" alt="Image"></div>
-		  </div>
-	    </div>
+          <canvas id="udoChart" width="40" height="30"></canvas>
+            <script>
+                var ctx = document.getElementById("udoChart");
+                var myLineChart = new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
+                    datasets: [
+                      {
+                        label: "Ventas 2017",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(63, 191, 63,0.4)",
+                        borderColor: "rgba(63, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(63, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(63, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [18, 21, 25, 19, 11],
+                      },
+                      {
+                        label: "Ventas 2016",
+                        fill: false,
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(255, 191, 63,0.4)",
+                        borderColor: "rgba(255, 191, 63,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(255, 191, 63,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(255, 191, 63,1)",
+                        pointHoverBorderColor: "rgba(220,220,220,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        data: [18, 19, 17, 21, 19],
+                      }
+                    ]
+                  }
+              });
+        </script>
+      </div>
+      </div>
       </div>
       <div>
         <a class ="btn btn-warning btn-lg btn-block" href="http://localhost:9000/#!/cliente_perfil">Volver</a>
       </div>
     </div>
-  </div> 
+  </div>
 </body>
 </html>
+
+<!--<a class ="btn btn-warning btn-lg btn-block" href="http://localhost:9000/#!/cliente_perfil">Volver</a>-->
